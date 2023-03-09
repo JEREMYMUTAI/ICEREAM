@@ -1,0 +1,509 @@
+<html>
+  <head>
+	<img src="ice.jpg" width="100" height="90"/>
+    <style>
+      /* Add your own CSS styles here */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Form styles */
+form {
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form input[type=password] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form input[type=submit] {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type=submit]:hover {
+  background-color: #ff8c00;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+
+    </style>
+
+	
+  </head>
+  <body>
+
+	<h1>Welcome to the Ice Cream Management System</h1>
+    <label for="menu">Select an option:</label>
+    <select id="menu" name="menu">
+      <option value="shop_admin">Shop Admin</option>
+      <option value="manage_inventory">Manage Inventory</option>
+      <optgroup label="Reports">
+        <option value="sales">Sales</option>
+        <option value="profits">Profits</option>
+        <option value="losses">Losses</option>
+      </optgroup>
+    </select>
+	
+    <h4>Dashboard</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Item Number</th>
+          <th>Item Flavor</th>
+          <th>Process Order</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Vanilla</td>
+          <td>001</td>
+          <td>Classic</td>
+          <td><button>Process Order</button></td>
+        </tr>
+        <tr>
+          <td>Chocolate</td>
+		  <img src="chocolate.jpg" width="500" height="2550"/>
+          <td>002</td>
+          <td>Rich</td>
+          <td><button>Process Order</button></td>
+        </tr>
+        <tr><img src="ice.jpg" width="20" height="25"/>
+
+          <td>Strawberry </td>
+          <td>003</td>
+          <td>Fruity</td>
+          <td><button>Process Order</button></td>
+        </tr>
+        <!-- Add more rows for other ice cream flavors and items -->
+      </tbody>
+    </table>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+    <div id="header">
+      <h4><a href="index.html">
+		<img src="ice.jpg" width="150" height="200"/>
+  </div>
+		<h3>Ice Cream Management System</h3>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About </h2>
+			<p>The Ice Cream Management System is a web-based application that helps ice cream shops manage their inventory, orders, and sales. With this system, you can easily track your inventory, manage orders, and generate reports to help you make informed business decisions.</p>
+		</section>
+		<section id="features">
+			<h2>Features </h2>
+			<ul>
+				<li>Inventory management</li>
+				<li>Order management</li>
+				<li>Sales tracking</li>
+				<li>Reporting</li>
+				<li>User management</li>
+				<li>Customizable settings</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<style>
+			
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Preloader*/
+.preloader {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: #fff; }
+  .preloader .cssload-speeding-wheel {
+    position: absolute;
+    top: calc(50% - 3.5px);
+    left: calc(50% - 3.5px); }
+
+/*******************
+/*Top bar
+*******************/
+.topbar {
+  background: #1e88e5; }
+  .topbar .navbar-header {
+    background: rgba(0, 0, 0, 0.05); }
+  .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+    display: none; }
+  .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8); }
+  .topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
+    color: #ffffff !important; }
+    .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover, .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
+      color: rgba(255, 255, 255, 0.8) !important; }
+
+/*******************
+/*General Elements
+*******************/
+a.link:hover, a.link:focus {
+  color: #1e88e5 !important; }
+
+.bg-theme {
+  background-color: #1e88e5 !important; }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #1e88e5;
+  border-color: #1e88e5; }
+
+.right-sidebar .rpanel-title {
+  background: #1e88e5; }
+
+.stylish-table tbody tr:hover, .stylish-table tbody tr.active {
+  border-left: 4px solid #1e88e5; }
+
+.text-themecolor {
+  color: #1e88e5 !important; }
+
+.profile-tab li a.nav-link.active,
+.customtab li a.nav-link.active {
+  border-bottom: 2px solid #1e88e5;
+  color: #1e88e5; }
+
+.profile-tab li a.nav-link:hover,
+.customtab li a.nav-link:hover {
+  color: #1e88e5; }
+
+/*******************
+/*Buttons
+*******************/
+.btn-themecolor,
+.btn-themecolor.disabled {
+  background: #1e88e5;
+  color: #ffffff;
+  border: 1px solid #1e88e5; }
+  .btn-themecolor:hover,
+  .btn-themecolor.disabled:hover {
+    background: #1e88e5;
+    opacity: 0.7;
+    border: 1px solid #1e88e5; }
+  .btn-themecolor.active, .btn-themecolor:focus,
+  .btn-themecolor.disabled.active,
+  .btn-themecolor.disabled:focus {
+    background: #028ee1; }
+
+/*******************
+/*sidebar navigation
+*******************/
+.sidebar-nav {
+  background: #fff; }
+  .sidebar-nav ul li a {
+    color: #607d8b; }
+    .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
+      color: #26c6da; }
+    .sidebar-nav ul li a.active {
+      color: #263238; }
+  .sidebar-nav ul li.nav-small-cap {
+    color: #99abb4; }
+  .sidebar-nav > ul > li.active > a,
+  .sidebar-nav > ul > li.active:hover > a {
+    color: #ffffff;
+    background: #26c6da; }
+    .sidebar-nav > ul > li.active > a i,
+    .sidebar-nav > ul > li.active:hover > a i {
+      color: #ffffff; }
+    .sidebar-nav > ul > li.active > a:after,
+    .sidebar-nav > ul > li.active:hover > a:after {
+      border-color: #ffffff; }
+  .sidebar-nav > ul > li > a.active i, .sidebar-nav > ul > li > a:hover i {
+    color: #26c6da; }
+  .sidebar-nav > ul > li > a i {
+    color: #99abb4; }
+  .sidebar-nav > ul > li > a.active {
+    font-weight: 400;
+    background: #ffffff;
+    color: #1e88e5; }
+
+.card-no-border .sidebar-nav > ul > li > a.active {
+  color: #ffffff;
+  background: #26c6da; }
+  .card-no-border .sidebar-nav > ul > li > a.active i {
+    color: #ffffff; }
+  .card-no-border .sidebar-nav > ul > li > a.active:after {
+    border-color: #ffffff; }
+</style>
+		  <html lang="en">
+		  <head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Login</title>
+			<link type="text/css" href="assets/custom/css/loginstyle.css" rel="stylesheet">
+		  </head>
+		  <body>
+			<form class="form-vertical" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" autocomplete="off">
+			  <div class="login-page">
+				<div class="form">
+				  <form class="login-form">
+					<input type="text" name="name" placeholder="username"/>
+					<input type="password" name="password" placeholder="password"/>
+					<button type="submit" name="login">login</button>
+					<p class="message"><a href="#">WELCOME admin</a></p>
+				  </form>
+				</div>
+			  </div>
+			</form>  
+		  </body>
+		  </html>
+		  <script>
+			$('.message a').click(function(){
+			 $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+			});
+		  </script>
+
+			<h2>Contact Us</h2>
+			<form>
+				<label for="email">jeremiahkamau@zetech.ac.ke</label></label>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="message">Message:</label><br>
+				<textarea id="message" name="message"></textarea><br><br>
+				<input type="submit" value="Submit">
+			</form>
+			<i--
+			challenge: link to the css file
+			hint:google it;
+		-->
+		</head>
+		<body>
+			<img src="chocolate.jpg" width="150" height="255"/>
+		   <img src="goole.png"/>
+		   <input type="text"/>
+
+			<style>
+				
+				/* Set the background color of the page */
+				body {
+				  background-color: #F2F2F2;
+				}
+				
+				/* Style the logo */
+				.logo {
+				  height: 10px;
+				  width: 10x;
+				  margin: 3px;
+				}
+				
+				/* Style the heading */
+				h1 {
+				  font-size: 36px;
+				  color: #2C3E50;
+				  margin: 20px;
+				}
+				
+				/* Style the introductory text */
+				p {
+				  font-size: 18px;
+				  color: #555;
+				  margin: 20px;
+				}
+				
+				/* Style the form */
+				form {
+				  background-color: #FFF;
+				  border: 1px solid #E0E0E0;
+				  border-radius: 5px;
+				  padding: 20px;
+				  margin: 20px;
+				}
+				
+				/* Style the form fields */
+				label {
+				  display: block;
+				  font-size: 16px;
+				  color: #2C3E50;
+				  margin-bottom: 5px;
+				}
+				
+				input[type="text"], input[type="email"], input[type="password"] {
+				  width: 100%;
+				  padding: 10px;
+				  margin-bottom: 20px;
+				  border: 1px solid #E0E0E0;
+				  border-radius: 5px;
+				  font-size: 16px;
+				}
+				
+				input[type="submit"] {
+				  background-color: #2C3E50;
+				  color: #FFF;
+				  padding: 10px;
+				  border: none;
+				  border-radius: 5px;
+				  font-size: 16px;
+				  cursor: pointer;
+				}
+				
+				input[type="submit"]:hover {
+				  background-color: #1B2631;
+				}
+				
+				/* Style the divider */
+				hr {
+				  border: none;
+				  height: 1px;
+				  background-color: #E0E0E0;
+				  margin: 20px;
+				}
+				
+				/* Style the additional information */
+				h2 {
+				  font-size: 24px;
+				  color: #2C3E50;
+				  margin: 20px;
+				}
+				
+				ul {
+				  list-style: none;
+				  padding: 0;
+				  margin: 0;
+				}
+				
+				li {
+				  font-size: 18px;
+				  color: #555;
+				  margin-bottom: 10px;
+				}
+				
+				/* Style the footer */
+				.footer {
+				  background-color: #2C3E50;
+				  color: #FFF;
+				  padding: 20px;
+				  text-align: center;
+				}
+				
+				.footer a {
+				  color: #FFF;
+				  text-decoration: none;
+				  margin: 10px;
+				}
+			</style>	
+		</section>
+	</main>
+	<footer>
+		<p>JerryNesS&copy; 2023 Ice Cream Management System</p>
+	</footer>
+</body>
+</html>
